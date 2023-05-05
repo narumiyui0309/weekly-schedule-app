@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>トップページ</title>
+    <style>
+        .container {
+            display: grid;
+            place-items: center;
+        }
+        .list {
+            width:60%;
+            height :260px;           
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* border: 1px solid black; */
+        }
+        .calender{
+            width: 500px;
+            height: 250px;
+            border: 1px solid black;           
+        }
+        ul {
+            width: 70%;
+            height: 100%;
+            overflow: scroll;           
+            flex-direction: column;
+            /* border: 1px solid black; */
+        }
+        .task {           
+            height: 50px;
+            list-style: none;
+            background-color: antiquewhite;
+            margin: 10px 0px 10px 0px;
+        }
+        
+        .dayTaskList {
+            margin-top: 10px;
+        }
+        label {
+            display: block;
+            margin: 10px 0px 10px 0px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Weekly_Schedule_App</h1>
+    <div class="container">
+        <p>今週のスケジュール</p>
+        <div class="list">
+            <div class="calender">
+                <p>月とその週のみ表示するカレンダー</p>
+            </div>
+            <ul>
+                <li class="task"><a href="#">タスク１</a></li>
+                <li class="task"><a href="#">タスク2</a></li>
+                <li class="task"><a href="#">タスク3</a></li>
+                <li class="task"><a href="#">タスク4</a></li>
+                <li class="task"><a href="#">タスク5</a></li>
+                <li class="task"><a href="#">タスク6</a></li>
+            </ul>            
+        </div>
+        <p style="margin-top: 50px;">今日のタスク</p>
+        <div class="dayTaskList">            
+                <label><input type="checkbox" name="dayTask" value="今日のタスク1">今日のタスク1</label>
+                <label><input type="checkbox" name="dayTask" value="今日のタスク2">今日のタスク2</label>
+                <label><input type="checkbox" name="dayTask" value="今日のタスク3">今日のタスク3</label>
+                <input type="button" value="+">
+                <input type="button" value="done!">
+        </div>
+        <p>+を押したら今日のタスクを追加できる</p>
+        <p>doneを押したらポップアップ表示→今日のタスクの表示、今週のタスクの表示、カレンダーから削除</p>
+    </div>
+</body>
+</html>
