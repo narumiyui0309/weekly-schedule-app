@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'weekly_schedule_app.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'mysql.connector.django',
         'NAME': 'weeklyScheduleApp',
         'USER': 'root',
         'PASSWORD': 'password',
